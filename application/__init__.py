@@ -2,8 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///data.db"
-app.config["SECRET_KEY"] = "jikmo;awedfvjniloawervjnilovaweriojnl"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:root@35.197.197.56/todo_db"
+app.config["SECRET_KEY"] = "secret_key"
 
 db = SQLAlchemy(app)
 
